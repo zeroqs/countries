@@ -1,0 +1,48 @@
+@import '../index';
+
+.input-container {
+  background-color: var(--colors-ui-base);
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  border-radius: $radius;
+  box-shadow: var(--shadow);
+  width: 100%;
+  margin-bottom: 1rem;
+  @media (min-width: 767px) {
+    margin-bottom: 0;
+    width: 280px;
+  }
+}
+.search-input {
+  margin-left: 2rem;
+  border: none;
+  outline: none;
+  color: var(--color-text);
+  background-color: var(--colors-ui-base);
+}
+.controls {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.select {
+  width: 200px;
+  color: var(--colors-text);
+  border-radius: $radius;
+  padding: 0.25rem;
+  height: 50px;
+  & > * {
+    box-shadow: var(--shadow);
+  }
+  & input {
+    padding-left: 0.25rem;
+
+  }
+  & * {
+    color: var(--colors-text) !important;
+  }
+  & > div[id] {
+    background-color: var(--colors-ui-base);
+  }
+}
